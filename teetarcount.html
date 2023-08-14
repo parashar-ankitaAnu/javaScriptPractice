@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <p>
+        teetar k 2 aage teetar. teetar k do peeche teetar. aage teetar , piche
+        teetar
+      </p>
+      <p id="result"></p>
+    </div>
+    <script>
+        const para = document.querySelector("p");
+        const word ="teetar";
+        function countWord(sentence,word){
+            sentence = sentence.toLowerCase();
+            word = word.toLowerCase();
+
+            
+            // const output =countWord(sentence,wordtocount);
+            
+            let count = 0;
+            const repeatedWord= sentence.split(" ");
+            for (let i=0;i<=repeatedWord.length;i++){
+                if(repeatedWord[i] ===word )
+                count++
+            }
+            console.log(count);
+            document.querySelector("#result").innerHTML = count
+        }
+       
+        countWord(para.innerHTML, word)
+
+        
+    </script>
+  </body>
+</html>

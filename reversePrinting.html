@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <textarea id="textarea" rows="10" cols="20" placeholder="write something i will reverse it"></textarea>
+    <p id="reverse"></p>
+    <p id ="newreversepara"></p>
+</body>
+<script>
+    const textarea =document.querySelector("textarea");
+    const reversepara = document.querySelector("p");
+    const newreversepara =document.getElementById("newreversepara")
+    textarea.onkeyup = function(){
+            const reversepara =textarea.value.split("").reverse().join("");
+            
+            newreversepara.innerHTML=reversepara;
+            // document.write(newreversepara); this line is overwriting the code eventually
+    console.log(reversepara);
+    }
+    console.log('ankita')
+   
+</script>
+</html>
