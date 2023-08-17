@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <div id="cover">
+    <div id="print">
+        <div id="print1"></div>
+        <div id="print2"></div>
+        <div id="print3"></div>
+    </div>
+
+   </div>
+
+
+
+     <script>
+        const person1 = {
+            name: 'John Doe',
+            age: 20,
+            hobbies: ['reading', 'painting', 'gardening']
+        };
+        const person2 = {
+            name: 'Selmon Sen',
+            age: 40,
+            pet: "Dog",
+            hobbies: ['reading', 'painting', 'gardening']
+        };
+        const person3 = {
+            name: 'Anmon Ven',
+            age: 30,
+            work:"Coding",
+            hobbies: ['reading', 'painting', 'gardening']
+        };
+         
+        function printobjectValue(persons){
+            
+            //     for(var key in person1){
+            //     // document.write(key + ":" +person1+"<br>")(THIS IS SHOWING OUTPUT AS) )
+            //     //name:[object Object]
+            //     //age:[object Object]
+            //     //hobbies:[object Object]
+                
+            //     //document.write(key + ":" +person1.key+"<br>")(THIS IS SHOWING UNDEFINED IN THE OUTPUT)
+            //     //document.write(key + ":" +person1.name+"<br>")(THIS IS SHOWING NAME IN ALL THREE KEY VALUES)
+
+
+            //     // document.getElementById("print1").innerHTML=(`${key} => ${person1[key]}`);
+
+            //     // document.getElementById("print1").innerHTML =(key + ":" +person1.key+"<br>")
+            // }
+             
+
+            // This is another way to print the all keys of the three differnt objects
+            // for(var key in person1){
+            //     document.write(key + ":" +person1[key]+"<br>")
+            // }
+           
+            // for(var key in person2){
+            //     document.write(key + ":" +person2[key]+"<br>")
+            // }
+           
+            // for(var key in person3){
+            //     document.write(key + ":" +person3[key]+"<br>")
+            // }
+           
+            for(var key in persons){
+            document.write(key + ":" +persons[key]+"<br>")
+            }
+        //    console.log("this is rights")
+        }
+printobjectValue(person1);
+printobjectValue(person2);
+printobjectValue(person3);
+    </script>
+</body>
+</html>
